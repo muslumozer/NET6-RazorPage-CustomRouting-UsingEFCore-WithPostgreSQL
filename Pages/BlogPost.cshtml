@@ -1,0 +1,7 @@
+﻿@page "/{name}"
+@model NET6RazorPageCustomRoutingUsingEFCoreWithPostgreSQL.Pages.BlogPostModel
+@{
+    ViewData["Title"] = Model.BlogPost.Title;
+}
+
+@Model.BlogPost.Content
